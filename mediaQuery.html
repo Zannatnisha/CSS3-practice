@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+         .container{
+              display: flex;
+              flex-direction: row;
+              max-width: 900px;
+              margin: 0 auto;
+              flex-wrap: wrap;
+        }
+        .food{
+            border: 3px solid lightblue;
+            border-radius: 30px;
+            margin: 10px;
+            width: 400px;
+        }
+         .food img{
+            width: 100%;
+        }
+        @media (max-width: 700px) {
+            .container{
+                flex-direction: column;
+            }
+            .container .food{
+                background-color: lightskyblue !important;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container .food{
+                background-color: rgb(149, 197, 149);
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/fruits.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore expedita aliquam maiores, fuga veniam obcaecati laboriosam quae ipsum, consequatur tenetur optio voluptatibus, corrupti eaque suscipit dolor ab sint distinctio nam!</p>
+        </div>
+        <div class="food">
+            <img src="images/fruits.jpg" alt="">
+            <p>Quibusdam odio possimus sit rerum repellat eaque illum quo, aliquid commodi ipsam sed dolorum asperiores voluptatibus dolores, nesciunt earum harum officiis, saepe quasi pariatur tenetur! Odit eaque maiores unde saepe.</p>
+        </div>
+        <div class="food">
+            <img src="images/fruits.jpg" alt="">
+            <p>Facere, esse temporibus? Labore cupiditate iure delectus aut temporibus. Debitis numquam iusto nihil unde rem praesentium ut dolorem vero quibusdam asperiores aperiam fuga neque quo inventore maiores, modi minus ipsum.</p>
+        </div>
+        <div class="food">
+            <img src="images/fruits.jpg" alt="">
+            <p>Est autem nisi eveniet dolorem delectus. Aliquid iste sequi, perspiciatis rem aliquam minus tempore obcaecati corporis laudantium deleniti eum vero id animi quaerat consequuntur rerum voluptas eos repudiandae. Assumenda, pariatur.</p>
+        </div>
+        <div class="food">
+            <img src="images/fruits.jpg" alt="">
+            <p>Iure ipsum ut accusantium omnis ipsam molestias voluptate voluptatem, quae alias fugiat error perspiciatis sapiente eius nemo perferendis aperiam dolorem, nam sequi voluptates vitae. Ducimus eos id quod quis quas?</p>
+        </div>
+        <div class="food">
+            <img src="images/fruits.jpg" alt="">
+            <p>Reiciendis impedit ipsam assumenda quisquam quaerat omnis est. Ipsam, sint voluptates. Fuga in, dicta ipsum maiores velit tempore molestiae praesentium, tempora culpa beatae provident inventore quidem consectetur incidunt illum delectus!</p>
+        </div>
+    </div>
+</body>
+</html>
